@@ -1,0 +1,272 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+body {
+  font-family: "Lato", "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  padding-bottom: 4rem;
+}
+
+h1 {
+  font-size: 2.8rem;
+  letter-spacing: 0.5rem;
+  font-weight: 800;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  letter-spacing: 0.4rem;
+  font-weight: bold;
+}
+
+.culture-figure {
+  position: relative;
+  margin-top: 4rem;
+}
+
+.culture-figure:before {
+  content: "";
+  width: 0.28rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(50% - 0.6rem);
+  background-color: #000;
+}
+
+.culture-figure:after {
+  display: block;
+  content: "";
+  border-bottom: solid 0.8rem #000;
+  border-left: solid 0.8rem transparent;
+  border-right: solid 0.8rem transparent;
+  top: -0.7rem;
+  left: calc(50% - 1.3rem);
+  position: absolute;
+}
+
+.horizontal-bar {
+  width: 100%;
+  height: 0.24rem;
+  background-color: black;
+  margin-bottom: 3rem;
+  position: relative;
+  margin-right: 0.4rem;
+}
+
+.horizontal-bar:after {
+  display: block;
+  content: "";
+  border-left: solid 0.8rem #000;
+  border-top: solid 0.8rem transparent;
+  border-bottom: solid 0.8rem transparent;
+  top: -0.7rem;
+  right: -0.4rem;
+  position: absolute;
+}
+
+hr {
+  border-width: 0.25rem;
+  border-color: #000;
+}
+
+img.product {
+  max-width: 100%;
+}
+
+img.man1 {
+  transition: transform 0.2s ease;
+  height: 8rem;
+  cursor: pointer;
+}
+
+img.man1:hover {
+  transform: scale(1.1);
+}
+
+img.man2 {
+  transition: transform 0.2s ease;
+  height: 8rem;
+  cursor: pointer;
+}
+img.man2:hover {
+  transform: scale(1.1);
+}
+a {
+  transition: color 0.3s linear;
+  font-weight: bold !important;
+}
+a:hover {
+  color: #00A4BB;
+  text-decoration: none;
+}
+
+ul li {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  margin-bottom: 0.8rem;
+}
+
+.form-control {
+  border: solid;
+  font-size: 0.8rem;
+  padding: 0.8rem 0.6rem;
+}
+
+.fab {
+  background: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 48px;
+  right: 48px;
+  display: inline-block;
+  cursor: default;
+}
+.fab#masterfab {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+.fab#masterfab span {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-image: url('./icon.png');
+  background-size: cover;
+  cursor: pointer;
+  transition: all 0.125s linear;
+  opacity: 0.2;
+  border-radius: 50%;
+}
+.fab#masterfab span:hover, .fab#masterfab.active span {
+  opacity: 1;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.fab.child {
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  right: 58px;
+  color: #000;
+  cursor: pointer;
+  display: none;
+  opacity: 0;
+  font-size: 0.9rem;
+  border-radius: 2rem;
+  padding: 0.6rem 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+}
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #386193;
+  opacity: 0.9;
+  display: none;
+}
+
+.marker-yellow {
+  background: linear-gradient(transparent 60%, #ffff66 60%);
+}
+
+.marker-blue {
+  background: linear-gradient(transparent 60%, #78d7fb 60%);
+}
+.modal-body h5 {
+  font-size: 0.8rem;
+  color: #555;
+  letter-spacing: 0.12rem;
+}
+.modal-body h1 {
+  font-size: 2.4rem;
+  letter-spacing: 0.32rem;
+  padding-bottom: 0.4rem;
+}
+
+.modal-body p {
+  font-size: 0.9rem;
+  letter-spacing: 0.14rem;
+}
+
+.links .item {
+  color: #000;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+}
+.links .item:hover:nth-child(1), .links .item.active:nth-child(1), .fab.child:nth-child(1):hover {
+  color: #f5c249;
+}
+.links .item:hover:nth-child(2), .links .item.active:nth-child(2), .fab.child:nth-child(2):hover {
+  color: #386193;
+}
+.links .item:hover:nth-child(3), .links .item.active:nth-child(3), .fab.child:nth-child(3):hover {
+  color: #d03c47;
+}
+.links .item:hover {
+  color: #00A4BB;
+}
+
+.backdrop.product {
+  background-color: #f5c249;
+}
+
+.backdrop.culture {
+  background-color: #386193;
+}
+
+.backdrop.company {
+  background-color: #d03c47;
+}
+
+
+.table-bordered td, .table-bordered th {
+  border: 0.18rem solid #000;
+}
+.table-bordered td {
+  font-weight: bold;
+}
+@media (max-width: 520px) {
+  html, body {
+    font-size: 11px;
+  }
+  h1 {
+    font-size: 2.2rem;
+    line-height: 1.5;
+    letter-spacing: 0.5rem;
+  }
+  p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+  }
+  br {
+    display: none;
+  }
+  .badge {
+    font-size: 1.4rem;
+  }
+  .fab {
+    right: 16px !important;
+    bottom: 32px;
+  }
+  .links .item {
+    font-size: 1.6rem;
+  }
+  .fab.child {
+    font-size: 1.4rem;
+  }
+  .badge {
+    font-size: 1rem;
+    padding-bottom: 0.4rem;
+  }
+}
